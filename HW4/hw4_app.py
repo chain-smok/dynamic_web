@@ -18,10 +18,12 @@ def register():
             "phone": phone,
             "address": address
         }
-    
-        with open('user_data.json', 'a', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False)
-            f.write('\n')
+        jsonfile=open('user_data.json','r')
+        info = json.load(jsonfile)
+        info.append(data)
+        with open('user_data.json','w') as f:
+            json.dump(info, f,ensure_ascii=False)
+        
     
         return "註冊成功"
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid;
+  background-color:rgb(0, 217, 255);
+}
+
+table {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+
+
+<table>
+  <tr>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Age</th>
+    <th>Phone</th>
+  </tr>
+  {% if info != undefined %}
+  {% for person in info['people'] %}
+  <tr>
+    <td>{{ person['firstname'] }}</td>
+    <td>{{ person['lastname'] }}</td>
+    <td>{{ person['age'] }}</td>
+    <td>{{ person['phone'] }}</td>
+  </tr>
+  {% endfor %}
+  <h1>The list of My Favorite Drinks</h1>
+  <ul>
+  {% for drink in info['drinks'] %}
+  <li>{{ drink }}</li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+  
+</table>
+
+</body>
+</html>
+
+

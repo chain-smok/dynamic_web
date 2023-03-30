@@ -1,0 +1,23 @@
+{
+    "people": [
+        {
+            "firstname":"Hsieh",
+            "lastname":"Joey",
+            "age": 41,
+            "phone": "0982123456"
+        },
+        {
+            "firstname":"Hsieh",
+            "lastname":"Jeremy",
+            "age": 9,
+            "phone": "0918123456"
+        },
+        {
+            "firstname":"Hsieh",
+            "lastname":"Jesse",
+            "age":6,
+            "phone":"0938123456"
+        }
+    ],
+    "drinks":["Coffee","Tea","Milk"]
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登入頁面</title>
+</head>
+<p> {{error}} </p>
+<body>
+	<h1>登入頁面</h1>
+	<form action="/login" method="post">
+		<label for="account">帳號:</label>
+		<input type="text" id="account" name="account" required><br><br>
+
+		<label for="password">密碼:</label>
+		<input type="password" id="password" name="password" required><br><br>
+
+		<input type="submit" value="登入">
+	</form>
+</body>
+</html>

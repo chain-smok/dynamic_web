@@ -1,0 +1,30 @@
+session:
+	拿到一些session可以刪掉
+
+get_use_money:(GET)
+	需要:
+		session['user_id']
+	回傳(沒有項目名稱，照陣列順序)
+		id
+		user_id
+		type
+		money
+		date
+
+create_record:(GET)
+	需要:
+		session['user_id']
+    	type
+    	money
+	回傳(成功)
+		創建...應該成功了吧
+	回傳(失敗)
+		(意義上的)導向err.html
+
+del_record:(GET)
+	需要:
+		session['record_id']
+	回傳(成功)
+		刪除...應該成功了吧
+	回傳(失敗)
+		(意義上的)導向err.html

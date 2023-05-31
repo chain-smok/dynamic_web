@@ -37,7 +37,7 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-8">
+            <div class="col-5">
                 <div class="row data-block-left-up">
                     <div class="col">
                         <div class="outline data-block-dailypay">
@@ -107,7 +107,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="addRecord" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div  id="addRecord" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -115,7 +115,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="text-center">
                         <form action="/record_action" method="POST">
-                            <h1>消費紀錄</h1>
+                            <h1>消費紀錄:<input type="text" id="record-id" name="record_id" value="" ></h1>
                             <div class="input-block">
                                 <div class="input">
                                     <span>項目：</span>
@@ -155,7 +155,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="updateRecord" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div  id="updateRecord" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -163,8 +163,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="text-center">
                         <form action="/record_action" method="POST">
-                            <input type="text" id="record-id" name="record_id" value="" hidden>
-                            <h1>消費紀錄</h1>
+                            
+                            <h1>消費紀錄:<input type="text" id="record-id" name="record_id" value="" ></h1>
                             <div class="input-block">
                                 <div class="input">
                                     <span>項目：</span>
